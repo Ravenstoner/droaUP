@@ -1,0 +1,127 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* main Style */
+
+.fullScreenHeight {
+    height: 100vh;
+    position: relative;
+}
+
+.radialBackground {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444444+0,272727+100 */
+background: rgb(68,68,68); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(68,68,68,1) 0%, rgba(39,39,39,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(68,68,68,1) 0%,rgba(39,39,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(68,68,68,1) 0%,rgba(39,39,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#272727',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.normalDarkBackground {
+    background-color: #272727;
+}
+
+header {
+    height: 68px;
+    position: relative;
+}
+
+header img {
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    transform: translate(0, -40%)
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+}
+
+header ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    opacity: .5;
+    margin-left: 40px;
+}
+
+header ul li a:active {
+    opacity: 1;
+}
+
+header ul li a:focus, .linkPage {
+    opacity: 1;
+}
+
+.redTextSpan {
+    color: #cf3b3b;
+}
+
+.button {
+    background-color: #cf3b3b;
+    padding: 0 90px;
+    border-radius: 100px;
+    display: inline-block;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.button p {
+    color: #f4f4f4;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* main Style ende */
+
+
+
+/* specific desgin index.html */
+
+.picBox {
+    position: absolute;
+    left: 32%;
+    top: 50%;
+    transform: translate(-68%, -50%);
+    width: 280px;
+    height: auto;
+}
+
+.indexMainTextBox {
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(0, -50%);
+}
+
+.indexMainTextBox h1 {
+    color: #f4f4f4;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.15;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* specific desgin index.html ende */
