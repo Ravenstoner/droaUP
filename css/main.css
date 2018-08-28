@@ -113,10 +113,16 @@ header ul li a:focus, .linkPage {
     margin: 0;
     padding: 0;
     padding-left: 100px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 10px;
     font-size: 3rem;
     font-weight: 800;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
 }
 
 /* main Style ende */
@@ -218,71 +224,77 @@ header ul li a:focus, .linkPage {
 
 /* specific design ueberuns.html */
 
-.threeBoxesCenterer {
-    margin-top: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-}
-
 .threeBoxes {
-    position: relative;
-    display: inline-block;
     width: 31%;
-    height: 600px;
-    margin: 1%;
-    border-radius: 25px;
-    overflow: hidden;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 20px;
+    height: 450px;
+    float: left;
     box-sizing: border-box;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
     cursor: pointer;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.threeBoxPic {
+.boxScale {
+    transform: scale(.9) translate(0, -40px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    z-index: 1;
+    height: 350px;
+}
+
+#firstPic {
+    background: url(../img/putz.jpg) center center;
+    position: absolute;
+    width: 100%;
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#secondPic {
+    background: url(../img/juju.jpg) center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#thirdPic {
+    background: url(../img/raven.jpg) center center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 .nameBox {
     position: absolute;
-    left: 25px;
-    bottom: 15px;
-    transition: all 300ms ease-in-out;
-}
-
-.nameBoxUp {
-    margin-bottom: 510px;
-}
-
-.nameBig, .aliasSmall {
+    margin: 25px;
+    margin-bottom: 20px;
     color: #f4f4f4;
+    bottom: 0;
+}
+
+.mainName, .secondName {
     margin: 0;
-    padding: 0;
     display: inline-block;
 }
 
-.nameBig {
-    font-size: 3rem;
+.mainName {
     font-weight: 800;
+    font-size: 2.8rem;
 }
 
-.aliasSmall {
-    font-size: .9rem;
+.secondName {
     font-weight: 200;
-}
-
-.nameBoxBackground {
-    position: absolute;
-    background: #272727;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    margin-top: 600px;
-    background: rgba(39, 39, 39, .6);
-    transition: all 300ms ease-in-out;
-}
-
-.nameBoxBackgroundShow {
-    margin-top: 0;
+    font-size: .8rem;
 }
 
 /* specific design ueberuns.html ende */
