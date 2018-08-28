@@ -27,14 +27,45 @@
     </section>
     <section class="fullScreenHeight normalDarkBackground">
         <h2 class="sectionHeadline">Wir sind die <span class="redTextSpan">droa.</span></h2>
+        <div class="container">
+            <div class="threeBoxes">
+                <div class="boxPic" id="firstPic"></div>
+                <div class="nameBox">
+                    <h2 class="mainName">Putz</h2>
+                    <span class="secondName">Marco Ritz</span>
+                </div>
+                <div class="aboutText">
+                    <h1>bla123</h1>
+                </div>
+            </div>
+            <div class="threeBoxes">
+                <div class="boxPic" id="secondPic"></div>
+                <div class="nameBox">
+                    <h2 class="mainName">Juju</h2>
+                    <span class="secondName">Judith Heinzl</span>
+                </div>
+                <div class="aboutText">
+                    <h1>bla123</h1>
+                </div>
+            </div>
+            <div class="threeBoxes">
+                <div class="boxPic" id="thirdPic"></div>
+                <div class="nameBox">
+                    <h2 class="mainName">Raven</h2>
+                    <span class="secondName">Christian<br>Rabensteiner</span>
+                </div>
+                <div class="aboutText">
+                    <h1>bla123</h1>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
 <script>
-// $( ".threeBoxes" ).click(function() {
-//     $(this).children(".nameBoxBackground").toggleClass("nameBoxBackgroundShow");
-//     $(this).children(".nameBox").toggleClass("nameBoxUp");
-// });
+$( ".threeBoxes" ).click(function() {
+    $(this).toggleClass("boxScale");
+});
 </script>
 
 </html>
