@@ -7,34 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    
 </head>
+<style>
+
+
+.projekt_text{
+    text-align: center;
+    color:#fff;
+    padding-top:10em;    
+}
+
+* { color:#fff; text-decoration: none;}
+</style>
 <body>
     <section class="fullScreenHeight radialBackground">
         <header>
             <img src="img/logo_droaup.svg" alt="logo">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projekte.html">Projekte</a></li>
-                <li><a href="ueberuns.html" class="linkPage">über uns</a></li>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="projekte.html"class="linkPage">Projekte</a></li>
+                <li><a href="ueberuns.html">über uns</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </header>
         <div class="MainTextBox">
-            <h1><span class="redTextSpan">Du</span> willst mehr über <span class="redTextSpan">uns</span> wissen?</h1>
-        </div>
+                <h1>
+                        <span>We make you</span><br>
+                        <a href="" class="typewrite" data-period="1000" data-type='[ "up to date.", "modern.", "present.", "a perf Website." ]'>
+                        <span class="wrap"></span>
+                        </a> 
+                    </h1>   
+            </div>
     </section>
     <section class="fullScreenHeight normalDarkBackground">
-        <h2 class="sectionHeadline">Wir sind die <span class="redTextSpan">droa.</span></h2>
+        <h2 class="sectionHeadline">Ihre Website umgesetzt von uns <span class="redTextSpan">droa.</span></h2>
     </section>
+    
 </body>
-
-<script>
-// $( ".threeBoxes" ).click(function() {
-//     $(this).children(".nameBoxBackground").toggleClass("nameBoxBackgroundShow");
-//     $(this).children(".nameBox").toggleClass("nameBoxUp");
-// });
-</script>
-
+    <script src="js/projects.js"></script>
 </html>
+
+      
